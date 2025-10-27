@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --uicol-light : #202C33;
+    --uicol-dark: #111B21;
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+aside{
+    flex-grow: 1;
+    
+    display: flex;
+    background-color: tomato;
+}
+
+nav{
+    width: 60px;
+    height: 100%;
+    background-color: var(--uicol-light);
+}
+
+.contact-list{
+    width: 100%;
+    background-color: var(--uicol-dark);
+}
+
+
+main{
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-header{
+    height: 60px;
+    background-color: var(--uicol-light);
+}
+
+.chat-body{
+    flex-grow: 1;
+    background-color: var(--uicol-dark);
+}
+
+.chat-footer{
+    height: 60px;
+    background-color: var(--uicol-light);
+}
