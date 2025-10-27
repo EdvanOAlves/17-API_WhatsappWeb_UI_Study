@@ -1,17 +1,19 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto';
-    color:white;
+    color: white;
 }
 
-:root{
-    --uicol-light : #202C33;
+:root {
+    --uicol-light: #202C33;
     --uicol-dark: #111B21;
     --uicol-hover: #ffffff19;
+
     --uicol-light-stroke: #2F3B43;
     --uicol-dark-stroke: #262E34;
+    --uicol-contact-stroke: #222D34;
 
     --uicol-text-light: #8696A0;
 
@@ -19,20 +21,20 @@
     --uicol-selected: #0A332C;
 }
 
-.clickable{
+.clickable {
     cursor: pointer;
 }
 
 
-body{
+body {
     height: 100vh;
     width: 100vw;
     display: flex;
 }
 
-aside{
+aside {
     flex-grow: 1;
-    
+
     display: flex;
     border-right-style: solid;
     border-right-width: 1px;
@@ -41,7 +43,7 @@ aside{
 
 /* Menus */
 
-nav{
+nav {
     width: 60px;
     height: 100%;
     background-color: var(--uicol-light);
@@ -52,19 +54,19 @@ nav{
     padding-block: 10px;
     align-items: center;
     place-content: space-between;
-    
+
     border-right-style: solid;
     border-right-width: 1px;
     border-color: var(--uicol-light-stroke);
 }
 
-ul{
+ul {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-li{
+.nav-item {
     display: flex;
     align-items: center;
     place-content: center;
@@ -74,13 +76,14 @@ li{
     height: 40px;
     border-radius: 100%;
 }
-li:hover{
+
+.nav-item:hover {
     background-color: var(--uicol-hover);
 }
 
 /* Lista de Contatos */
 
-.contact-list{
+.contact-list {
     width: 100%;
     padding-inline: 24px;
     background-color: var(--uicol-dark);
@@ -90,7 +93,7 @@ li:hover{
     gap: 1rem;
 }
 
-.contact-list-header{
+.contact-list-header {
     display: flex;
     flex: 0 0 auto;
     justify-content: space-between;
@@ -104,25 +107,25 @@ li:hover{
     color: white;
 }
 
-.contactlist-side-buttons{
+.contactlist-side-buttons {
     display: flex;
     flex-direction: row;
 }
 
-.chat-search-bar{
+.chat-search-bar {
     background-color: var(--uicol-light);
     appearance: none;
     height: 2rem;
-    border-radius:10px;
+    border-radius: 10px;
     display: flex;
     gap: 1rem;
 }
 
-.lupa-icon{
+.lupa-icon {
     margin-left: 12px;
 }
 
-input{
+input {
     width: 100%;
     height: 100%;
 
@@ -130,13 +133,13 @@ input{
     border: none;
     outline: none;
     caret-color: white;
-    
+
     color: white;
     font-size: 1rem;
     /* Falta tirar o x de Limpar input */
 }
 
-.chat-filters{
+.chat-filters {
     display: flex;
     gap: 8px;
 
@@ -144,62 +147,105 @@ input{
     color: var(--uicol-text-light);
 }
 
-.filter{
-    padding-inline:12px;
+.filter {
+    padding-inline: 12px;
     padding-block: 6px;
     background-color: var(--uicol-light);
     border-radius: 15px;
 }
 
-.filter.selected{
+.filter.selected {
     background-color: var(--uicol-selected);
     color: var(--uicol-highlight);
 }
 
-.archive{
+.archive {
     display: flex;
     flex-direction: row;
-    position:relative;
-    
+    position: relative;
+    align-items: center;
+
     gap: 29px;
+    height: 46px;
 
 
 }
 
-.archive h3{
-    font-weight: 300;
+h3 {
+    font-weight: 350;
 
 }
 
-.archive p{
+.archive p {
     color: var(--uicol-highlight);
     position: absolute;
     right: 0px;
 }
 
+/* Contatos */
+
+.contact {
+    height: 72px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding-block:16px ;
+
+    
+}
+.profile-photo{
+    width: 50px;
+    height: 50px;
+}
+
+.chat-details{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-width: 1px;
+    border-color: var(--uicol-dark-stroke);
+}
+
+.contact-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.message-preview{
+    color: var(--uicol-text-light);
+}
+
+
 
 /* Chat */
 
 
-main{
+main {
     flex-grow: 3;
     display: flex;
     flex-direction: column;
 }
 
-.chat-header{
+.chat-header {
     height: 60px;
     background-color: var(--uicol-light);
 }
 
 
 
-.chat-body{
+.chat-body {
     flex-grow: 1;
     background-color: var(--uicol-dark);
 }
 
-.chat-footer{
+.chat-footer {
     height: 60px;
     background-color: var(--uicol-light);
 }
