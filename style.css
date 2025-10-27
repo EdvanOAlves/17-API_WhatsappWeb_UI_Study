@@ -7,6 +7,7 @@
 :root{
     --uicol-light : #202C33;
     --uicol-dark: #111B21;
+    --uicol-hover: #ffffff19;
 }
 
 
@@ -27,6 +28,30 @@ nav{
     width: 60px;
     height: 100%;
     background-color: var(--uicol-light);
+
+    display: flex;
+    flex-direction: column;
+
+    padding-block: 10px;
+    align-items: center;
+    place-content: space-between;
+}
+
+ul{
+    gap: ;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    place-content: center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+li:hover{
+    background-color: var(--uicol-hover);
 }
 
 .contact-list{
