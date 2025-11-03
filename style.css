@@ -237,6 +237,7 @@ h3 {
 
 main {
     flex-grow: 3;
+    max-width: 66%;
     display: flex;
     flex-direction: column;
 }
@@ -292,6 +293,48 @@ main {
     height: 24px;
     width: 100%;
     margin: 4px;
+}
+
+/* CHAT BODY */
+
+.chat-body{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-inline: 72px;
+    overflow: scroll;
+}
+
+.message{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    padding-inline: 8px;
+    padding-block: 8px;
+    max-width: 70%;
+
+}
+
+.message.sent{
+    align-self: flex-end;
+    background-color: #005C4B;
+}
+
+.message.received{
+    align-self: flex-start;
+    background-color: #202C33;
+}
+
+.message-data{
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: rgba(255, 255, 255, 0.60);
+}
+.message-data span{
+    color: #FFF4
 }
 
 /* CHAT FOOTER (Para escrever mensagens) */
