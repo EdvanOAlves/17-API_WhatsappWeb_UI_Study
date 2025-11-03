@@ -17,14 +17,14 @@
     <aside>
         <nav class="navbar">
             <ul class="chat-nav">
-                <li class="nav-item"> <img src="./icons/Chat-button.svg" alt=""></li>
-                <li class="nav-item"> <img src="./icons/Status-button.svg" alt=""></li>
-                <li class="nav-item"> <img src="./icons/Communities-button.svg" alt=""></li>
+                <li class="nav-item hoverable"> <img src="./icons/Chat-button.svg" alt=""></li>
+                <li class="nav-item hoverable"> <img src="./icons/Status-button.svg" alt=""></li>
+                <li class="nav-item hoverable"> <img src="./icons/Communities-button.svg" alt=""></li>
             </ul>
 
             <ul class="profile-nav">
-                <li class="nav-item"><img src="./icons/Settings-button.svg" alt=""></li>
-                <li class="nav-item"><img src="./icons/Profile-NoIMG.png" alt=""></li>
+                <li class="nav-item hoverable"><img src="./icons/Settings-button.svg" alt=""></li>
+                <li class="nav-item hoverable"><img src="./icons/Profile-NoIMG.png" alt=""></li>
             </ul>
         </nav>
 
@@ -32,8 +32,8 @@
             <header class="contact-list-header">
                 <h2>Chats</h2>
                 <ul class="contactlist-side-buttons">
-                    <li class="nav-item"><img src="./icons/New_chat-button.svg" alt=""></li>
-                    <li class="nav-item"><img src="./icons/More-button.svg" alt=""></li>
+                    <li class="nav-item hoverable"><img src="./icons/New_chat-button.svg" alt=""></li>
+                    <li class="nav-item hoverable"><img src="./icons/More-button.svg" alt=""></li>
                 </ul>
             </header>
 
@@ -67,32 +67,6 @@
                         </div>
                     </div>
                 </li>
-                <li class="contact">
-                    <img class="profile-photo" src="./icons/Profile-NoIMG.png" alt="">
-                    <div class="chat-details">
-                        <div class="contact-header">
-                            <h3 class="username">Fulano da Silva</h3>
-                            <span class="last-update"> 10:57</span>
-                        </div>
-                        <div class="last-message">
-                            <img src="./icons/Received-icon.svg" alt="" class="message-status">
-                            <span class="message-preview"> Hello world!</span>
-                        </div>
-                    </div>
-                </li>
-                <li class="contact">
-                    <img class="profile-photo" src="./icons/Profile-NoIMG.png" alt="">
-                    <div class="chat-details">
-                        <div class="contact-header">
-                            <h3 class="username">Fulano da Silva</h3>
-                            <span class="last-update"> 10:57</span>
-                        </div>
-                        <div class="last-message">
-                            <img src="./icons/Received-icon.svg" alt="" class="message-status">
-                            <span class="message-preview"> Hello world!</span>
-                        </div>
-                    </div>
-                </li>
             </ul>
 
 
@@ -100,8 +74,15 @@
     </aside>
     <main class="chat">
         <header class="chat-header">
-            <div class="contact-info"></div>
-            <div class="contact-buttons"></div>
+            <div class="contact-info">
+                <img class="chatroom-photo" src="./icons/Profile-NoIMG.png" alt="">
+                <h3 class="username">Fulano da Silva</h3>
+            </div>
+            <ul class="contact-buttons">
+                <li class="contact-button hoverable clickable"> <img src="./icons/Search-button.svg" alt=""></li>
+                <li class="contact-button hoverable clickable"> <img src="./icons/More-button.svg" alt=""></li>
+            </ul>
+            
         </header>
         <section class="chat-body"></section>
         <footer class="chat-footer"></footer>
