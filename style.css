@@ -189,7 +189,6 @@ h3 {
     display: flex;
     gap: 16px;
     align-items: center;
-    padding-block:16px ;
 
     
 }
@@ -205,9 +204,9 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
 
-    
+
+    padding-block: 14px;    
     border-top-style: solid;
-    border-bottom-style: solid;
     border-top-width: 1px;
     border-color: var(--uicol-dark-stroke);
 }
@@ -216,6 +215,10 @@ h3 {
     display: flex;
     width: 100%;
     justify-content: space-between;
+}
+
+.contact-header h3{
+    
 }
 
 .message-preview{
@@ -237,8 +240,6 @@ main {
     height: 60px;
     background-color: var(--uicol-light);
 }
-
-
 
 .chat-body {
     flex-grow: 1;
