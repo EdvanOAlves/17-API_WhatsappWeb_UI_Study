@@ -302,8 +302,9 @@ main {
     flex-direction: column;
     gap: 12px;
     padding-inline: 72px;
-    overflow: scroll;
-}
+    overflow: auto;
+    overflow-x: hidden;
+  }
 
 .message{
     margin-top: 12px;
