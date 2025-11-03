@@ -89,12 +89,18 @@ ul {
 
 .contact-list {
     width: 100%;
-    padding-inline: 24px;
     background-color: var(--uicol-dark);
 
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+.contact-list .navigation{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-inline: 24px;
+
 }
 
 .contact-list-header {
@@ -192,9 +198,8 @@ h3 {
     height: 72px;
     display: flex;
     gap: 16px;
-    align-items: center;
-
-    
+    align-items: center; 
+    padding-inline: 24px;
 }
 .profile-photo{
     width: 50px;
@@ -287,4 +292,31 @@ main {
     height: 24px;
     width: 100%;
     margin: 4px;
+}
+
+/* CHAT FOOTER (Para escrever mensagens) */
+
+.chat-footer{
+    display: flex;
+    padding-block: 11px;
+    padding-inline: 16px;
+    align-items: center;
+    gap: 8px;
+}
+
+.attach{
+    display: flex;
+    gap: 16px;
+}
+
+.chat-button{
+    width: 30px;
+}
+
+.message-box{
+    flex-grow: 1;
+    background-color: #2A3942;
+    border-radius: 4px;
+    padding-inline: 16px;
+    padding-block: 10px;
 }
