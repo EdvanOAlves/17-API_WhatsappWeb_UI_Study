@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Roboto';
     color: white;
+    list-style: none;
 }
 
 :root {
@@ -23,6 +24,11 @@
 
 .clickable {
     cursor: pointer;
+}
+
+.hoverable:hover{
+    background-color: var(--uicol-hover);
+
 }
 
 
@@ -77,9 +83,7 @@ ul {
     border-radius: 100%;
 }
 
-.nav-item:hover {
-    background-color: var(--uicol-hover);
-}
+
 
 /* Lista de Contatos */
 
@@ -217,10 +221,6 @@ h3 {
     justify-content: space-between;
 }
 
-.contact-header h3{
-    
-}
-
 .message-preview{
     color: var(--uicol-text-light);
 }
@@ -238,6 +238,8 @@ main {
 
 .chat-header {
     height: 60px;
+    display: flex;
+    justify-content: space-between;
     background-color: var(--uicol-light);
 }
 
@@ -249,4 +251,40 @@ main {
 .chat-footer {
     height: 60px;
     background-color: var(--uicol-light);
+}
+
+.contact-info{
+    height: 100%;
+    padding-inline: 16px;
+    padding-block: 9px;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact-buttons{
+    height: 100%;
+    padding-inline: 16px;
+    padding-block: 9px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.contact-button{
+    display: flex;
+    align-items: center;
+    place-content: center;
+    cursor: pointer;
+    border-radius: 100%;
+}
+.contact-button img{
+    width: 24px;
+    height: 24px;
+    width: 100%;
+    margin: 4px;
 }
