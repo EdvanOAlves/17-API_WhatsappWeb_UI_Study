@@ -29,32 +29,34 @@
         </nav>
 
         <section class="contact-list">
-            <header class="contact-list-header">
-                <h2>Chats</h2>
-                <ul class="contactlist-side-buttons">
-                    <li class="nav-item hoverable"><img src="./icons/New_chat-button.svg" alt=""></li>
-                    <li class="nav-item hoverable"><img src="./icons/More-button.svg" alt=""></li>
-                </ul>
-            </header>
-
-
-            <div class="chat-search-bar">
-                <img src="./icons/Search-button.svg" alt="" class="lupa-icon">
-                <input type="search" placeholder="Search">
+            <div class="navigation">
+                <header class="contact-list-header">
+                    <h2>Chats</h2>
+                    <ul class="contactlist-side-buttons">
+                        <li class="nav-item hoverable"><img src="./icons/New_chat-button.svg" alt=""></li>
+                        <li class="nav-item hoverable"><img src="./icons/More-button.svg" alt=""></li>
+                    </ul>
+                </header>
+                
+                
+                <div class="chat-search-bar">
+                    <img src="./icons/Search-button.svg" alt="" class="lupa-icon">
+                    <input type="search" placeholder="Search">
+                </div>
+                <div class="chat-filters">
+                    <span class="filter selected clickable">All</span>
+                    <span class="filter clickable">Unread</span>
+                    <span class="filter clickable">Groups</span>
+                </div>
+                <section class="archive clickable">
+                    <img src="./icons/Archive-button.svg" alt="">
+                    <h3>Archived</h3>
+                    <p class="archived-count">1</p>
+                </section>
             </div>
-            <div class="chat-filters">
-                <span class="filter selected clickable">All</span>
-                <span class="filter clickable">Unread</span>
-                <span class="filter clickable">Groups</span>
-            </div>
-            <section class="archive clickable">
-                <img src="./icons/Archive-button.svg" alt="">
-                <h3>Archived</h3>
-                <p class="archived-count">1</p>
-            </section>
-
+                
             <ul class="contacts">
-                <li class="contact">
+                <li class="contact hoverable clickable">
                     <img class="profile-photo" src="./icons/Profile-NoIMG.png" alt="">
                     <div class="chat-details">
                         <div class="contact-header">
@@ -85,7 +87,16 @@
             
         </header>
         <section class="chat-body"></section>
-        <footer class="chat-footer"></footer>
+        <footer class="chat-footer">
+            <div class="attach">
+                <img src="./icons/Emojis-button.svg" alt="" class="chat-button">
+                <img src="./icons/Add-button.svg" alt="" class="chat-button">
+            </div>
+            <div class = "message-box">
+                <input type="text" placeholder="Alto lá, essa função não faz parte do escopo do projeto!">
+            </div>
+            <img src="./icons/Mike-button.svg" alt="" class="chat-button">
+        </footer>
 
     </main>
 </body>
